@@ -84,11 +84,13 @@ export default function Index() {
       {/* Header */}
       <header className="border-b border-border bg-white sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">Ю</span>
-            </div>
-            <span className="text-xl font-bold text-primary">ЮЛВИКА</span>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="https://cdn.poehali.dev/projects/5d745404-d0cf-45de-9876-0b7cea27bb6e/files/cda7b47e-e85b-44b6-91f5-6f96b020f9ef.jpg"
+              alt="СТИМУЛ лого" 
+              className="h-10 w-10 object-contain"
+            />
+            <span className="text-2xl font-bold text-primary">СТИМУЛ</span>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">Услуги</a>
@@ -106,15 +108,15 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative py-20 px-4 bg-gradient-to-br from-primary/5 to-primary/10">
         <div className="container mx-auto text-center">
-          <Badge variant="outline" className="mb-4">Кадровое агентство полного цикла</Badge>
+          <Badge variant="outline" className="mb-4">Кадровое агентство нового поколения</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 leading-tight">
-            Найдём лучших<br />
-            <span className="text-destructive">специалистов</span><br />
-            для вашего бизнеса
+            Ваш <span className="text-destructive">стимул</span><br />
+            к росту бизнеса —<br />
+            профессиональная команда
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Специализируемся на подборе персонала для банков, IT-платформ и крупных корпораций. 
-            Гарантируем результат в кратчайшие сроки.
+            Подбираем мотивированных специалистов для банков, IT-компаний и крупного бизнеса. 
+            Создаём команды, которые достигают результатов.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8" onClick={scrollToContactForm}>
@@ -132,11 +134,11 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Badge variant="secondary" className="mb-4">О компании</Badge>
-              <h2 className="text-3xl font-bold text-primary mb-6">ЮЛВИКА — ваш надёжный партнёр в подборе персонала</h2>
+              <h2 className="text-3xl font-bold text-primary mb-6">СТИМУЛ — даём импульс вашему бизнесу</h2>
               <p className="text-muted-foreground text-lg mb-6">
-                Мы специализируемся на поиске и подборе высококвалифицированных специалистов 
-                для крупных организаций. Наша экспертиза охватывает банковскую сферу, 
-                IT-индустрию и корпоративный сектор.
+                Находим не просто сотрудников, а настоящих профессионалов с мотивацией к развитию. 
+                Специализируемся на подборе кадров для банковской сферы, IT и крупного корпоративного сектора. 
+                Каждый кандидат — это стимул к новым достижениям вашей компании.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center p-4 bg-secondary/50 rounded-lg">
@@ -151,8 +153,8 @@ export default function Index() {
             </div>
             <div className="relative">
               <img 
-                src="/img/85e207bf-7096-413d-aed7-2aaba1e3cf17.jpg" 
-                alt="Офисная среда" 
+                src="https://cdn.poehali.dev/projects/5d745404-d0cf-45de-9876-0b7cea27bb6e/files/14344a00-d713-4091-918a-31618184cbc4.jpg" 
+                alt="Команда СТИМУЛ" 
                 className="rounded-xl shadow-lg w-full h-[400px] object-cover"
               />
             </div>
@@ -359,7 +361,7 @@ export default function Index() {
                   </div>
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-muted-foreground">info@юлвика.рф</div>
+                    <div className="text-muted-foreground">rabota@stimul-ka.ru</div>
                   </div>
                 </div>
                 
@@ -385,93 +387,14 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Contact Form */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Форма обратной связи</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {isContactSubmitted ? (
-                  <div className="text-center py-6">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Icon name="Check" size={32} className="text-green-600" />
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2">Сообщение отправлено!</h3>
-                    <p className="text-muted-foreground">
-                      Мы свяжемся с вами в ближайшее время
-                    </p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleContactSubmit} className="space-y-4">
-                    <div>
-                      <label className="text-sm font-medium">Имя *</label>
-                      <Input 
-                        required
-                        value={contactForm.name}
-                        onChange={(e) => setContactForm({...contactForm, name: e.target.value})}
-                        placeholder="Введите ваше имя" 
-                        className="mt-1" 
-                      />
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium">Компания *</label>
-                      <Input 
-                        required
-                        value={contactForm.company}
-                        onChange={(e) => setContactForm({...contactForm, company: e.target.value})}
-                        placeholder="Название компании" 
-                        className="mt-1" 
-                      />
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium">Email *</label>
-                      <Input 
-                        required
-                        type="email" 
-                        value={contactForm.email}
-                        onChange={(e) => setContactForm({...contactForm, email: e.target.value})}
-                        placeholder="your@email.com" 
-                        className="mt-1" 
-                      />
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium">Телефон</label>
-                      <Input 
-                        value={contactForm.phone}
-                        onChange={(e) => setContactForm({...contactForm, phone: e.target.value})}
-                        placeholder="+7 (___) ___-__-__" 
-                        className="mt-1" 
-                      />
-                    </div>
-                    <div>
-                      <label className="text-sm font-medium">Сообщение</label>
-                      <Textarea 
-                        value={contactForm.message}
-                        onChange={(e) => setContactForm({...contactForm, message: e.target.value})}
-                        placeholder="Опишите ваши потребности в персонале..."
-                        className="mt-1 min-h-[100px]"
-                      />
-                    </div>
-                    <Button type="submit" className="w-full" disabled={isContactSubmitting}>
-                      {isContactSubmitting ? (
-                        <>
-                          <Icon name="Loader2" size={18} className="mr-2 animate-spin" />
-                          Отправляем...
-                        </>
-                      ) : (
-                        <>
-                          Отправить заявку
-                          <Icon name="Send" size={18} className="ml-2" />
-                        </>
-                      )}
-                    </Button>
-                    <p className="text-xs text-muted-foreground">
-                      * Обязательные поля. Мы свяжемся с вами в течение 2 часов в рабочее время.
-                    </p>
-                  </form>
-                )}
-              </CardContent>
-            </Card>
+            {/* Партнёрство */}
+            <div className="relative">
+              <img 
+                src="https://cdn.poehali.dev/projects/5d745404-d0cf-45de-9876-0b7cea27bb6e/files/62e33a4e-d58a-44ca-94ff-83251c6ecefb.jpg" 
+                alt="Успешное партнёрство" 
+                className="rounded-xl shadow-lg w-full h-[400px] object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -482,13 +405,15 @@ export default function Index() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-primary-foreground rounded-lg flex items-center justify-center">
-                  <span className="text-primary font-bold text-sm">Ю</span>
-                </div>
-                <span className="text-xl font-bold">ЮЛВИКА</span>
+                <img 
+                  src="https://cdn.poehali.dev/projects/5d745404-d0cf-45de-9876-0b7cea27bb6e/files/cda7b47e-e85b-44b6-91f5-6f96b020f9ef.jpg"
+                  alt="СТИМУЛ лого" 
+                  className="h-8 w-8 object-contain"
+                />
+                <span className="text-xl font-bold">СТИМУЛ</span>
               </div>
               <p className="text-primary-foreground/70 text-sm">
-                Кадровое агентство полного цикла для крупного бизнеса
+                Даём импульс вашему бизнесу через профессиональные команды
               </p>
             </div>
             
@@ -516,7 +441,7 @@ export default function Index() {
               <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="space-y-2 text-sm">
                 <div className="text-primary-foreground/70">+7 919 903 9250</div>
-                <div className="text-primary-foreground/70">info.ulvika@gmail.com</div>
+                <div className="text-primary-foreground/70">rabota@stimul-ka.ru</div>
                 <div className="text-primary-foreground/70">Москва, ул. Деловая, 15</div>
               </div>
             </div>
@@ -524,8 +449,7 @@ export default function Index() {
           
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
             <div className="text-primary-foreground/70">
-              © 2024 ЮЛВИКА. Все права защищены.<br />
-              ИНН 6671150809 | ОГРН 1216600017237
+              © 2024 СТИМУЛ. Все права защищены.
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground">Политика конфиденциальности</a>
