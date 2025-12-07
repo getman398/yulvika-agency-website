@@ -92,7 +92,7 @@ export default function Index() {
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">Услуги</a>
-            <a href="#tariffs" className="text-muted-foreground hover:text-primary transition-colors">Тарифы</a>
+            <a href="#pricing" className="text-muted-foreground hover:text-primary transition-colors">Тарифы</a>
             <a href="#advantages" className="text-muted-foreground hover:text-primary transition-colors">Преимущества</a>
             <a href="#contacts" className="text-muted-foreground hover:text-primary transition-colors">Контакты</a>
           </nav>
@@ -434,8 +434,113 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Pricing Packages */}
+      <section id="pricing" className="py-16 px-8 bg-background">
+        <div className="w-full max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="mb-4">Тарифы</Badge>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Выберите подходящий пакет</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+              Гибкие тарифные планы для компаний любого размера
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Лайт */}
+            <Card className="relative border-2 hover:border-primary/50 transition-colors">
+              <CardHeader className="text-center pb-6">
+                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="FileText" size={24} className="text-primary" />
+                </div>
+                <CardTitle className="text-2xl">Лайт</CardTitle>
+                <div className="text-3xl font-bold text-primary mt-4">10 000₽</div>
+                <div className="text-sm text-muted-foreground">за 5 человек</div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <Icon name="Check" size={16} className="text-green-500 flex-shrink-0" />
+                  <span className="text-sm">Сбор контактов и резюме</span>
+                </div>
+                <Button className="w-full mt-6" variant="outline" onClick={() => openModal("Лайт", "10 000₽")}>
+                  Выбрать пакет
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Профи */}
+            <Card className="relative border-2 border-primary shadow-lg scale-105">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <Badge className="bg-primary text-white">Популярный</Badge>
+              </div>
+              <CardHeader className="text-center pb-6">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Star" size={24} className="text-white" />
+                </div>
+                <CardTitle className="text-2xl">Профи</CardTitle>
+                <div className="text-3xl font-bold text-primary mt-4">30 000₽</div>
+                <div className="text-sm text-muted-foreground">за 5 человек</div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <Icon name="Check" size={16} className="text-green-500 flex-shrink-0" />
+                  <span className="text-sm">Сбор контактов и резюме</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="Check" size={16} className="text-green-500 flex-shrink-0" />
+                  <span className="text-sm">Первичное собеседование</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="Check" size={16} className="text-green-500 flex-shrink-0" />
+                  <span className="text-sm">Отбор на соответствие психологического портрета</span>
+                </div>
+                <Button className="w-full mt-6" onClick={() => openModal("Профи", "30 000₽")}>
+                  Выбрать пакет
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Супер */}
+            <Card className="relative border-2 hover:border-primary/50 transition-colors">
+              <CardHeader className="text-center pb-6">
+                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Crown" size={24} className="text-white" />
+                </div>
+                <CardTitle className="text-2xl">Супер</CardTitle>
+                <div className="text-3xl font-bold text-primary mt-4">100 000₽</div>
+                <div className="text-sm text-muted-foreground">за 5 человек</div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <Icon name="Check" size={16} className="text-green-500 flex-shrink-0" />
+                  <span className="text-sm">Сбор контактов и резюме</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="Check" size={16} className="text-green-500 flex-shrink-0" />
+                  <span className="text-sm">Первичное собеседование</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="Check" size={16} className="text-green-500 flex-shrink-0" />
+                  <span className="text-sm">Отбор на соответствие психологического портрета</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="Check" size={16} className="text-green-500 flex-shrink-0" />
+                  <span className="text-sm">Гарантия замены в течение 1 месяца</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Icon name="Check" size={16} className="text-green-500 flex-shrink-0" />
+                  <span className="text-sm">Помощь в адаптации сотрудника</span>
+                </div>
+                <Button className="w-full mt-6" variant="outline" onClick={() => openModal("Супер", "100 000₽")}>
+                  Выбрать пакет
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
-      <section className="py-16 px-8 bg-background">
+      <section className="py-16 px-8 bg-secondary/30">
         <div className="w-full max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Отзывы</Badge>
