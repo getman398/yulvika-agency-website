@@ -511,71 +511,131 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Contacts & Contact Form */}
-      <section id="contacts" className="py-16 px-8 bg-primary/5">
-        <div className="w-full max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Info */}
-            <div>
-              <Badge variant="outline" className="mb-4">Контакты</Badge>
-              <h2 className="text-3xl font-bold text-primary mb-6">Свяжитесь с нами</h2>
-              <p className="text-muted-foreground text-lg mb-8">
-                Готовы обсудить ваши потребности в персонале и предложить оптимальное решение.
-              </p>
-              
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                    <Icon name="Phone" size={20} className="text-primary-foreground" />
-                  </div>
-                  <div>
-                    <div className="font-semibold">Телефон</div>
-                    <div className="text-muted-foreground">+7 919 903 9250</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                    <Icon name="Mail" size={20} className="text-primary-foreground" />
-                  </div>
-                  <div>
-                    <div className="font-semibold">Email</div>
-                    <div className="text-muted-foreground">kadri@ka-alians.ru</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                    <Icon name="MapPin" size={20} className="text-primary-foreground" />
-                  </div>
-                  <div>
-                    <div className="font-semibold">Адрес</div>
-                    <div className="text-muted-foreground">111024, Москва, ул. 2-я Энтузиастов, 5/40, помещ. 47у/4</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                    <Icon name="Clock" size={20} className="text-primary-foreground" />
-                  </div>
-                  <div>
-                    <div className="font-semibold">Время работы</div>
-                    <div className="text-muted-foreground">Пн-Пт: 9:00 - 18:00</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Партнёрство */}
-            <div className="relative">
-              <div className="rounded-xl shadow-lg w-full h-[400px] bg-gradient-to-br from-blue-500/20 to-amber-500/20 flex items-center justify-center">
-                <div className="text-center">
-                  <Icon name="Handshake" size={120} className="text-primary mx-auto mb-4" />
-                  <p className="text-2xl font-bold text-primary">Надёжное партнёрство</p>
-                </div>
-              </div>
-            </div>
+      {/* Contacts */}
+      <section id="contacts" className="py-20 px-8 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-destructive opacity-95"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]"></div>
+        
+        <div className="w-full max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <Badge variant="secondary" className="mb-4 bg-white/20 text-white border-white/30">Свяжитесь с нами</Badge>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Начните сотрудничество<br />с агентством Альянс
+            </h2>
+            <p className="text-white/90 text-xl max-w-3xl mx-auto">
+              Оставьте заявку, и мы свяжемся с вами в течение часа для обсуждения вашего проекта
+            </p>
           </div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <Card className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 transition-all">
+              <CardContent className="pt-8 pb-8 text-center">
+                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Phone" size={32} className="text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Позвоните нам</h3>
+                <a href="tel:+79199039250" className="text-white/90 hover:text-white text-lg font-medium">
+                  +7 919 903 9250
+                </a>
+                <p className="text-white/70 text-sm mt-2">Пн-Пт: 9:00 - 18:00</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 transition-all">
+              <CardContent className="pt-8 pb-8 text-center">
+                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Mail" size={32} className="text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Напишите email</h3>
+                <a href="mailto:kadri@ka-alians.ru" className="text-white/90 hover:text-white text-lg font-medium">
+                  kadri@ka-alians.ru
+                </a>
+                <p className="text-white/70 text-sm mt-2">Ответим в течение 2 часов</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 transition-all">
+              <CardContent className="pt-8 pb-8 text-center">
+                <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="MapPin" size={32} className="text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Приезжайте в офис</h3>
+                <p className="text-white/90 text-sm leading-relaxed">
+                  111024, г. Москва,<br />
+                  ул. 2-я Энтузиастов, 5/40,<br />
+                  помещ. 47у/4
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="bg-white shadow-2xl max-w-2xl mx-auto">
+            <CardContent className="p-8">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-primary mb-2">Быстрая заявка</h3>
+                <p className="text-muted-foreground">
+                  Заполните форму, и наш менеджер свяжется с вами для консультации
+                </p>
+              </div>
+
+              <form className="space-y-4">
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Ваше имя *</label>
+                    <Input 
+                      required
+                      placeholder="Иван Петров" 
+                      className="h-12"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium mb-2 block">Телефон *</label>
+                    <Input 
+                      required
+                      type="tel"
+                      placeholder="+7 (___) ___-__-__" 
+                      className="h-12"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="text-sm font-medium mb-2 block">Email *</label>
+                  <Input 
+                    required
+                    type="email"
+                    placeholder="ivan@company.ru" 
+                    className="h-12"
+                  />
+                </div>
+
+                <div>
+                  <label className="text-sm font-medium mb-2 block">Компания</label>
+                  <Input 
+                    placeholder="Название вашей компании" 
+                    className="h-12"
+                  />
+                </div>
+
+                <div>
+                  <label className="text-sm font-medium mb-2 block">Комментарий</label>
+                  <Textarea 
+                    placeholder="Расскажите о вакансиях или задачах по подбору персонала..."
+                    className="min-h-[120px]"
+                  />
+                </div>
+
+                <Button type="submit" size="lg" className="w-full h-14 text-lg">
+                  Отправить заявку
+                  <Icon name="Send" size={20} className="ml-2" />
+                </Button>
+
+                <p className="text-xs text-muted-foreground text-center">
+                  Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                </p>
+              </form>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
