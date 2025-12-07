@@ -83,7 +83,7 @@ export default function Index() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border bg-white sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="w-full px-8 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
               src="https://cdn.poehali.dev/projects/5d745404-d0cf-45de-9876-0b7cea27bb6e/files/cda7b47e-e85b-44b6-91f5-6f96b020f9ef.jpg"
@@ -106,8 +106,8 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-20 px-4 bg-gradient-to-br from-primary/5 to-primary/10">
-        <div className="container mx-auto text-center">
+      <section className="relative py-20 px-8 bg-gradient-to-br from-primary/5 to-primary/10">
+        <div className="w-full text-center">
           <Badge variant="outline" className="mb-4">Кадровое агентство нового поколения</Badge>
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 leading-tight">
             Ваш <span className="text-destructive">стимул</span><br />
@@ -129,8 +129,8 @@ export default function Index() {
       </section>
 
       {/* About Company */}
-      <section id="services" className="py-16 px-4">
-        <div className="container mx-auto">
+      <section id="services" className="py-16 px-8">
+        <div className="w-full">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Badge variant="secondary" className="mb-4">О компании</Badge>
@@ -163,8 +163,8 @@ export default function Index() {
       </section>
 
       {/* Tariff Plans */}
-      <section id="tariffs" className="py-16 px-4 bg-secondary/20">
-        <div className="container mx-auto">
+      <section id="tariffs" className="py-16 px-8 bg-secondary/20">
+        <div className="w-full">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Тарифные планы</Badge>
             <h2 className="text-3xl font-bold text-primary mb-4">Выберите подходящий тариф</h2>
@@ -282,8 +282,8 @@ export default function Index() {
       </section>
 
       {/* Advantages */}
-      <section id="advantages" className="py-16 px-4">
-        <div className="container mx-auto">
+      <section id="advantages" className="py-16 px-8">
+        <div className="w-full">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Наши преимущества</Badge>
             <h2 className="text-3xl font-bold text-primary mb-4">Почему с нами выгодно работать</h2>
@@ -333,8 +333,8 @@ export default function Index() {
       </section>
 
       {/* Contacts & Contact Form */}
-      <section id="contacts" className="py-16 px-4 bg-primary/5">
-        <div className="container mx-auto">
+      <section id="contacts" className="py-16 px-8 bg-primary/5">
+        <div className="w-full">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div>
@@ -400,8 +400,8 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-12 px-4">
-        <div className="container mx-auto">
+      <footer className="bg-primary text-primary-foreground py-12 px-8">
+        <div className="w-full">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
