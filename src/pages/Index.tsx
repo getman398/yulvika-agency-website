@@ -107,15 +107,14 @@ export default function Index() {
       <section className="relative py-20 px-8 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="w-full text-center">
           <div className="max-w-5xl mx-auto">
-            <Badge variant="outline" className="mb-4">Кадровое агентство полного цикла</Badge>
+            <Badge variant="outline" className="mb-4">Кадровое агентство и карьерный консалтинг</Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Надёжный <span className="text-primary">альянс</span><br />
-              для роста вашего бизнеса —<br />
-              профессиональная команда
+              Надёжный <span className="text-primary">партнёр</span><br />
+              в сфере подбора<br />
+              персонала
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Подбираем мотивированных специалистов для банков, IT-компаний и крупного бизнеса. 
-              Создаём команды, которые достигают результатов.
+              Мы помогаем компаниям находить лучших специалистов, а соискателям — строить успешную карьеру в ведущих организациях.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -134,21 +133,19 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Badge variant="secondary" className="mb-4">О компании</Badge>
-              <h2 className="text-3xl font-bold text-foreground mb-6">Альянс — ваш партнёр в подборе персонала</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-6">Более 10 лет на рынке HR-услуг</h2>
               <p className="text-muted-foreground text-lg mb-6">
-                Кадровое агентство полного цикла с многолетним опытом работы. 
-                Мы создаём стратегические альянсы между работодателями и кандидатами, 
-                обеспечивая идеальное соответствие компетенций и корпоративной культуры. 
-                Специализируемся на подборе персонала для банков, IT-компаний и крупного бизнеса.
+                Кадровое агентство «Альянс» — надёжный партнёр в сфере подбора персонала и карьерного консалтинга. 
+                Мы помогаем компаниям находить лучших специалистов, а соискателям — строить успешную карьеру в ведущих организациях.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center p-4 bg-secondary/50 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">800+</div>
-                  <div className="text-sm text-muted-foreground">Закрытых вакансий</div>
+                  <div className="text-2xl font-bold text-primary">10+</div>
+                  <div className="text-sm text-muted-foreground">лет на рынке</div>
                 </div>
                 <div className="text-center p-4 bg-secondary/50 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">200+</div>
-                  <div className="text-sm text-muted-foreground">Довольных клиентов</div>
+                  <div className="text-2xl font-bold text-primary">10 000+</div>
+                  <div className="text-sm text-muted-foreground">резюме в базе</div>
                 </div>
               </div>
             </div>
@@ -164,119 +161,99 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Tariff Plans */}
+      {/* Services */}
       <section id="tariffs" className="py-16 px-8 bg-secondary/30">
         <div className="w-full max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Тарифные планы</Badge>
-            <h2 className="text-3xl font-bold text-foreground mb-4">Выберите подходящий тариф</h2>
+            <Badge variant="outline" className="mb-4">Наши услуги</Badge>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Ключевые направления</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              Гибкие условия сотрудничества для компаний любого масштаба
+              Полный спектр услуг для бизнеса и соискателей
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Лайт */}
             <Card className="relative border-2 hover:border-primary/50 transition-colors">
               <CardHeader className="text-center pb-6">
-                <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Zap" size={24} className="text-primary" />
+                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Users" size={32} className="text-primary" />
                 </div>
-                <CardTitle className="text-2xl">Лайт</CardTitle>
-                <div className="text-3xl font-bold text-primary">от 50 000₽</div>
-                <div className="text-sm text-muted-foreground">за закрытую вакансию</div>
+                <CardTitle className="text-2xl">Подбор персонала</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Подбор специалистов среднего звена</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Гарантия замены 3 месяца</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Срок закрытия до 30 дней</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Email поддержка</span>
-                </div>
-                <Button className="w-full mt-6" variant="outline" onClick={() => openModal("Лайт", "от 50 000₽")}>Выбрать план</Button>
+              <CardContent>
+                <p className="text-muted-foreground text-center mb-4">
+                  Закрываем вакансии любого уровня — от линейных сотрудников до топ-менеджеров
+                </p>
               </CardContent>
             </Card>
 
-            {/* Стандарт */}
-            <Card className="relative border-2 border-primary shadow-lg scale-105">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-destructive text-destructive-foreground">Популярный</Badge>
-              </div>
+            <Card className="relative border-2 hover:border-primary/50 transition-colors">
               <CardHeader className="text-center pb-6">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Star" size={24} className="text-primary-foreground" />
+                <div className="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Briefcase" size={32} className="text-accent" />
                 </div>
-                <CardTitle className="text-2xl">Стандарт</CardTitle>
-                <div className="text-3xl font-bold text-primary">от 80 000₽</div>
-                <div className="text-sm text-muted-foreground">за закрытую вакансию</div>
+                <CardTitle className="text-2xl">Аутсорсинг рекрутинга</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Подбор руководящих позиций</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Гарантия замены 6 месяцев</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Срок закрытия до 20 дней</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Персональный менеджер</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Психологическое тестирование</span>
-                </div>
-                <Button className="w-full mt-6" onClick={() => openModal("Стандарт", "от 80 000₽")}>Выбрать план</Button>
+              <CardContent>
+                <p className="text-muted-foreground text-center mb-4">
+                  Берём на себя полный цикл подбора для ваших проектов
+                </p>
               </CardContent>
             </Card>
 
-            {/* Профи */}
             <Card className="relative border-2 hover:border-primary/50 transition-colors">
               <CardHeader className="text-center pb-6">
-                <div className="w-12 h-12 bg-destructive rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Crown" size={24} className="text-destructive-foreground" />
+                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="LineChart" size={32} className="text-primary" />
                 </div>
-                <CardTitle className="text-2xl">Профи</CardTitle>
-                <div className="text-3xl font-bold text-primary">от 150 000₽</div>
-                <div className="text-sm text-muted-foreground">за закрытую вакансию</div>
+                <CardTitle className="text-2xl">Кадровый консалтинг</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Подбор топ-менеджеров</span>
+              <CardContent>
+                <p className="text-muted-foreground text-center mb-4">
+                  Анализируем HR-процессы и предлагаем решения для оптимизации штата
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="relative border-2 hover:border-primary/50 transition-colors">
+              <CardHeader className="text-center pb-6">
+                <div className="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="GraduationCap" size={32} className="text-accent" />
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Гарантия замены 12 месяцев</span>
+                <CardTitle className="text-2xl">Карьерное консультирование</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-center mb-4">
+                  Помогаем соискателям составить резюме, подготовиться к интервью и найти работу мечты
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="relative border-2 hover:border-primary/50 transition-colors">
+              <CardHeader className="text-center pb-6">
+                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Clock" size={32} className="text-primary" />
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Срок закрытия до 14 дней</span>
+                <CardTitle className="text-2xl">Временный персонал</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-center mb-4">
+                  Предоставляем специалистов на проектные и сезонные задачи
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="relative border-2 border-primary/50 hover:border-primary transition-colors bg-primary/5">
+              <CardHeader className="text-center pb-6">
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Target" size={32} className="text-white" />
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Dedicated команда</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Icon name="Check" size={16} className="text-green-600 flex-shrink-0" />
-                  <span className="text-sm">Executive поиск</span>
-                </div>
-                <Button className="w-full mt-6" variant="outline" onClick={() => openModal("Профи", "от 150 000₽")}>Выбрать план</Button>
+                <CardTitle className="text-2xl text-primary">Индивидуальный подход</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-center mb-4">
+                  Для каждого клиента разрабатываем персональную стратегию подбора
+                </p>
               </CardContent>
             </Card>
           </div>
@@ -288,45 +265,105 @@ export default function Index() {
         <div className="w-full max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Наши преимущества</Badge>
-            <h2 className="text-3xl font-bold text-foreground mb-4">Почему с нами выгодно работать</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Почему выбирают нас</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              Многолетний опыт и проверенные методики подбора персонала
+              Ценности и принципы, которыми мы руководствуемся
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-6">
             <Card className="text-center border-0 shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="pt-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Icon name="Clock" size={32} className="text-primary" />
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Award" size={32} className="text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Быстрый результат</h3>
-                <p className="text-muted-foreground">
-                  Средний срок закрытия вакансии — 20 дней. Экспресс-подбор за 7 дней для критичных позиций.
+                <h3 className="text-lg font-semibold mb-3">Глубокая экспертиза</h3>
+                <p className="text-muted-foreground text-sm">
+                  Более 10 лет на рынке HR-услуг, сотни успешно закрытых вакансий
                 </p>
               </CardContent>
             </Card>
 
             <Card className="text-center border-0 shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="pt-8">
-                <div className="w-16 h-16 bg-destructive/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Icon name="Shield" size={32} className="text-destructive" />
+                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Target" size={32} className="text-accent" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4">100% гарантия</h3>
-                <p className="text-muted-foreground">
-                  Бесплатная замена кандидата в течение гарантийного периода. Возврат средств при неуспехе.
+                <h3 className="text-lg font-semibold mb-3">Индивидуальный подход</h3>
+                <p className="text-muted-foreground text-sm">
+                  Для каждого клиента разрабатываем персональную стратегию подбора
                 </p>
               </CardContent>
             </Card>
 
             <Card className="text-center border-0 shadow-sm hover:shadow-md transition-shadow">
               <CardContent className="pt-8">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Icon name="Users" size={32} className="text-green-600" />
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Database" size={32} className="text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Экспертиза</h3>
-                <p className="text-muted-foreground">
-                  Глубокие знания банковской сферы и IT-индустрии. Проверенная база из 50 000+ специалистов.
+                <h3 className="text-lg font-semibold mb-3">Широкая база кандидатов</h3>
+                <p className="text-muted-foreground text-sm">
+                  Более 10 000 резюме в нашей базе, постоянный поиск новых талантов
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-0 shadow-sm hover:shadow-md transition-shadow">
+              <CardContent className="pt-8">
+                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Zap" size={32} className="text-accent" />
+                </div>
+                <h3 className="text-lg font-semibold mb-3">Скорость и качество</h3>
+                <p className="text-muted-foreground text-sm">
+                  Средний срок закрытия вакансии — 2–3 недели
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-0 shadow-sm hover:shadow-md transition-shadow">
+              <CardContent className="pt-8">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Shield" size={32} className="text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold mb-3">Гарантия замены</h3>
+                <p className="text-muted-foreground text-sm">
+                  Бесплатная замена кандидата в течение гарантийного срока
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-0 shadow-sm hover:shadow-md transition-shadow">
+              <CardContent className="pt-8">
+                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Handshake" size={32} className="text-accent" />
+                </div>
+                <h3 className="text-lg font-semibold mb-3">Доверие</h3>
+                <p className="text-muted-foreground text-sm">
+                  Строим долгосрочные отношения с клиентами и кандидатами
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-0 shadow-sm hover:shadow-md transition-shadow">
+              <CardContent className="pt-8">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Star" size={32} className="text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold mb-3">Профессионализм</h3>
+                <p className="text-muted-foreground text-sm">
+                  Используем современные методики подбора и оценки
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center border-0 shadow-sm hover:shadow-md transition-shadow">
+              <CardContent className="pt-8">
+                <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="MessageCircle" size={32} className="text-accent" />
+                </div>
+                <h3 className="text-lg font-semibold mb-3">Открытость</h3>
+                <p className="text-muted-foreground text-sm">
+                  Держим вас в курсе каждого этапа работы
                 </p>
               </CardContent>
             </Card>
@@ -338,92 +375,59 @@ export default function Index() {
       <section className="py-16 px-8 bg-secondary/30">
         <div className="w-full max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4">Кейсы</Badge>
-            <h2 className="text-3xl font-bold text-foreground mb-4">Успешные проекты</h2>
+            <Badge variant="outline" className="mb-4">Для кого мы работаем</Badge>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Наши клиенты</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              Реальные результаты нашей работы с крупными компаниями
+              Сотрудничаем с компаниями любого масштаба
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-0 shadow-md">
-              <CardContent className="pt-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <Icon name="Building2" size={24} className="text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">Крупный банк</h3>
-                    <p className="text-sm text-muted-foreground">Финансовый сектор</p>
-                  </div>
+          <div className="grid md:grid-cols-4 gap-6">
+            <Card className="border-2 border-primary/30 shadow-md hover:border-primary transition-colors">
+              <CardContent className="pt-8 text-center">
+                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Store" size={32} className="text-primary" />
                 </div>
-                <p className="text-muted-foreground mb-4">
-                  Закрыли 25 позиций в IT-департаменте за 45 дней. Подобрали команду разработчиков, аналитиков и архитекторов.
+                <h3 className="font-semibold text-lg mb-2">Малый и средний бизнес</h3>
+                <p className="text-muted-foreground text-sm">
+                  Гибкие решения для растущих компаний
                 </p>
-                <div className="flex items-center space-x-4 text-sm">
-                  <div>
-                    <div className="text-2xl font-bold text-primary">25</div>
-                    <div className="text-muted-foreground">вакансий</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-primary">45</div>
-                    <div className="text-muted-foreground">дней</div>
-                  </div>
-                </div>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-md">
-              <CardContent className="pt-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <Icon name="Code2" size={24} className="text-purple-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">IT-компания</h3>
-                    <p className="text-sm text-muted-foreground">Технологии</p>
-                  </div>
+            <Card className="border-2 border-accent/30 shadow-md hover:border-accent transition-colors">
+              <CardContent className="pt-8 text-center">
+                <div className="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Building2" size={32} className="text-accent" />
                 </div>
-                <p className="text-muted-foreground mb-4">
-                  Собрали команду из 15 специалистов для запуска нового продукта. CTO, тимлиды и senior-разработчики.
+                <h3 className="font-semibold text-lg mb-2">Крупные корпорации</h3>
+                <p className="text-muted-foreground text-sm">
+                  Комплексный подбор для больших компаний
                 </p>
-                <div className="flex items-center space-x-4 text-sm">
-                  <div>
-                    <div className="text-2xl font-bold text-primary">15</div>
-                    <div className="text-muted-foreground">специалистов</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-primary">30</div>
-                    <div className="text-muted-foreground">дней</div>
-                  </div>
-                </div>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-md">
-              <CardContent className="pt-6">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                    <Icon name="Factory" size={24} className="text-green-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">Производство</h3>
-                    <p className="text-sm text-muted-foreground">Промышленность</p>
-                  </div>
+            <Card className="border-2 border-primary/30 shadow-md hover:border-primary transition-colors">
+              <CardContent className="pt-8 text-center">
+                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Rocket" size={32} className="text-primary" />
                 </div>
-                <p className="text-muted-foreground mb-4">
-                  Провели массовый подбор персонала — 120 человек за 2 месяца. От рабочих до руководителей отделов.
+                <h3 className="font-semibold text-lg mb-2">Стартапы</h3>
+                <p className="text-muted-foreground text-sm">
+                  Быстрый подбор команды для молодых проектов
                 </p>
-                <div className="flex items-center space-x-4 text-sm">
-                  <div>
-                    <div className="text-2xl font-bold text-primary">120</div>
-                    <div className="text-muted-foreground">человек</div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-primary">60</div>
-                    <div className="text-muted-foreground">дней</div>
-                  </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-accent/30 shadow-md hover:border-accent transition-colors">
+              <CardContent className="pt-8 text-center">
+                <div className="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Landmark" size={32} className="text-accent" />
                 </div>
+                <h3 className="font-semibold text-lg mb-2">Государственные учреждения</h3>
+                <p className="text-muted-foreground text-sm">
+                  Подбор с учётом специфики госсектора
+                </p>
               </CardContent>
             </Card>
           </div>
