@@ -85,12 +85,10 @@ export default function Index() {
       <header className="border-b border-border bg-white sticky top-0 z-50">
         <div className="w-full px-8 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <img 
-              src="https://cdn.poehali.dev/projects/5d745404-d0cf-45de-9876-0b7cea27bb6e/files/cda7b47e-e85b-44b6-91f5-6f96b020f9ef.jpg"
-              alt="СТИМУЛ лого" 
-              className="h-10 w-10 object-contain"
-            />
-            <span className="text-2xl font-bold text-primary">СТИМУЛ</span>
+            <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xl">А</span>
+            </div>
+            <span className="text-2xl font-bold text-primary">АЛЬЯНС</span>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">Услуги</a>
@@ -109,10 +107,10 @@ export default function Index() {
       <section className="relative py-20 px-8 bg-gradient-to-br from-primary/5 to-primary/10">
         <div className="w-full text-center">
           <div className="max-w-5xl mx-auto">
-            <Badge variant="outline" className="mb-4">Кадровое агентство нового поколения</Badge>
+            <Badge variant="outline" className="mb-4">Кадровое агентство полного цикла</Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 leading-tight">
-              Ваш <span className="text-destructive">стимул</span><br />
-              к росту бизнеса —<br />
+              Надёжный <span className="text-destructive">альянс</span><br />
+              для роста вашего бизнеса —<br />
               профессиональная команда
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -136,29 +134,31 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Badge variant="secondary" className="mb-4">О компании</Badge>
-              <h2 className="text-3xl font-bold text-primary mb-6">СТИМУЛ — даём импульс вашему бизнесу</h2>
+              <h2 className="text-3xl font-bold text-primary mb-6">Альянс — ваш партнёр в подборе персонала</h2>
               <p className="text-muted-foreground text-lg mb-6">
-                Находим не просто сотрудников, а настоящих профессионалов с мотивацией к развитию. 
-                Специализируемся на подборе кадров для банковской сферы, IT и крупного корпоративного сектора. 
-                Каждый кандидат — это стимул к новым достижениям вашей компании.
+                Кадровое агентство полного цикла с многолетним опытом работы. 
+                Мы создаём стратегические альянсы между работодателями и кандидатами, 
+                обеспечивая идеальное соответствие компетенций и корпоративной культуры. 
+                Специализируемся на подборе персонала для банков, IT-компаний и крупного бизнеса.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center p-4 bg-secondary/50 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">500+</div>
+                  <div className="text-2xl font-bold text-primary">800+</div>
                   <div className="text-sm text-muted-foreground">Закрытых вакансий</div>
                 </div>
                 <div className="text-center p-4 bg-secondary/50 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">120+</div>
+                  <div className="text-2xl font-bold text-primary">200+</div>
                   <div className="text-sm text-muted-foreground">Довольных клиентов</div>
                 </div>
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="https://cdn.poehali.dev/projects/5d745404-d0cf-45de-9876-0b7cea27bb6e/files/14344a00-d713-4091-918a-31618184cbc4.jpg" 
-                alt="Команда СТИМУЛ" 
-                className="rounded-xl shadow-lg w-full h-[400px] object-cover"
-              />
+              <div className="rounded-xl shadow-lg w-full h-[400px] bg-gradient-to-br from-primary/20 to-destructive/20 flex items-center justify-center">
+                <div className="text-center">
+                  <Icon name="Users" size={120} className="text-primary mx-auto mb-4" />
+                  <p className="text-2xl font-bold text-primary">Профессиональная команда</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -363,7 +363,7 @@ export default function Index() {
                   </div>
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-muted-foreground">rabota@stimul-ka.ru</div>
+                    <div className="text-muted-foreground">kadri@ka-alians.ru</div>
                   </div>
                 </div>
                 
@@ -373,7 +373,7 @@ export default function Index() {
                   </div>
                   <div>
                     <div className="font-semibold">Адрес</div>
-                    <div className="text-muted-foreground">Москва, ул. Деловая, 15, офис 301</div>
+                    <div className="text-muted-foreground">111024, Москва, ул. 2-я Энтузиастов, 5/40, помещ. 47у/4</div>
                   </div>
                 </div>
                 
@@ -391,11 +391,12 @@ export default function Index() {
 
             {/* Партнёрство */}
             <div className="relative">
-              <img 
-                src="https://cdn.poehali.dev/projects/5d745404-d0cf-45de-9876-0b7cea27bb6e/files/62e33a4e-d58a-44ca-94ff-83251c6ecefb.jpg" 
-                alt="Успешное партнёрство" 
-                className="rounded-xl shadow-lg w-full h-[400px] object-cover"
-              />
+              <div className="rounded-xl shadow-lg w-full h-[400px] bg-gradient-to-br from-blue-500/20 to-amber-500/20 flex items-center justify-center">
+                <div className="text-center">
+                  <Icon name="Handshake" size={120} className="text-primary mx-auto mb-4" />
+                  <p className="text-2xl font-bold text-primary">Надёжное партнёрство</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -407,15 +408,13 @@ export default function Index() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <img 
-                  src="https://cdn.poehali.dev/projects/5d745404-d0cf-45de-9876-0b7cea27bb6e/files/cda7b47e-e85b-44b6-91f5-6f96b020f9ef.jpg"
-                  alt="СТИМУЛ лого" 
-                  className="h-8 w-8 object-contain"
-                />
-                <span className="text-xl font-bold">СТИМУЛ</span>
+                <div className="h-8 w-8 bg-white rounded-lg flex items-center justify-center">
+                  <span className="text-primary font-bold text-lg">А</span>
+                </div>
+                <span className="text-xl font-bold">АЛЬЯНС</span>
               </div>
               <p className="text-primary-foreground/70 text-sm">
-                Даём импульс вашему бизнесу через профессиональные команды
+                Кадровое агентство полного цикла для крупного бизнеса
               </p>
             </div>
             
@@ -443,15 +442,16 @@ export default function Index() {
               <h4 className="font-semibold mb-4">Контакты</h4>
               <div className="space-y-2 text-sm">
                 <div className="text-primary-foreground/70">+7 919 903 9250</div>
-                <div className="text-primary-foreground/70">rabota@stimul-ka.ru</div>
-                <div className="text-primary-foreground/70">Москва, ул. Деловая, 15</div>
+                <div className="text-primary-foreground/70">kadri@ka-alians.ru</div>
+                <div className="text-primary-foreground/70">Москва, ул. 2-я Энтузиастов, 5/40</div>
               </div>
             </div>
           </div>
           
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
             <div className="text-primary-foreground/70">
-              © 2024 СТИМУЛ. Все права защищены.
+              © 2024 Альянс. Все права защищены.<br />
+              ИНН 7703768127
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground">Политика конфиденциальности</a>
