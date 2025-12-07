@@ -108,16 +108,18 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative py-20 px-8 bg-gradient-to-br from-primary/5 to-primary/10">
         <div className="w-full text-center">
-          <Badge variant="outline" className="mb-4">Кадровое агентство нового поколения</Badge>
-          <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 leading-tight">
-            Ваш <span className="text-destructive">стимул</span><br />
-            к росту бизнеса —<br />
-            профессиональная команда
-          </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Подбираем мотивированных специалистов для банков, IT-компаний и крупного бизнеса. 
-            Создаём команды, которые достигают результатов.
-          </p>
+          <div className="max-w-5xl mx-auto">
+            <Badge variant="outline" className="mb-4">Кадровое агентство нового поколения</Badge>
+            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 leading-tight">
+              Ваш <span className="text-destructive">стимул</span><br />
+              к росту бизнеса —<br />
+              профессиональная команда
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+              Подбираем мотивированных специалистов для банков, IT-компаний и крупного бизнеса. 
+              Создаём команды, которые достигают результатов.
+            </p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-lg px-8" onClick={scrollToContactForm}>
               Подобрать персонал
@@ -130,7 +132,7 @@ export default function Index() {
 
       {/* About Company */}
       <section id="services" className="py-16 px-8">
-        <div className="w-full">
+        <div className="w-full max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Badge variant="secondary" className="mb-4">О компании</Badge>
@@ -164,11 +166,11 @@ export default function Index() {
 
       {/* Tariff Plans */}
       <section id="tariffs" className="py-16 px-8 bg-secondary/20">
-        <div className="w-full">
+        <div className="w-full max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Тарифные планы</Badge>
             <h2 className="text-3xl font-bold text-primary mb-4">Выберите подходящий тариф</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
               Гибкие условия сотрудничества для компаний любого масштаба
             </p>
           </div>
@@ -283,11 +285,11 @@ export default function Index() {
 
       {/* Advantages */}
       <section id="advantages" className="py-16 px-8">
-        <div className="w-full">
+        <div className="w-full max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Наши преимущества</Badge>
             <h2 className="text-3xl font-bold text-primary mb-4">Почему с нами выгодно работать</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
               Многолетний опыт и проверенные методики подбора персонала
             </p>
           </div>
@@ -334,7 +336,7 @@ export default function Index() {
 
       {/* Contacts & Contact Form */}
       <section id="contacts" className="py-16 px-8 bg-primary/5">
-        <div className="w-full">
+        <div className="w-full max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div>
@@ -401,7 +403,7 @@ export default function Index() {
 
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground py-12 px-8">
-        <div className="w-full">
+        <div className="w-full max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
