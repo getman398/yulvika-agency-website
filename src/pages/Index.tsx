@@ -82,7 +82,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border bg-white sticky top-0 z-50">
+      <header className="border-b border-border bg-card/80 backdrop-blur-lg sticky top-0 z-50">
         <div className="w-full px-8 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center">
@@ -104,12 +104,12 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-20 px-8 bg-gradient-to-br from-primary/5 to-primary/10">
+      <section className="relative py-20 px-8 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="w-full text-center">
           <div className="max-w-5xl mx-auto">
             <Badge variant="outline" className="mb-4">Кадровое агентство полного цикла</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 leading-tight">
-              Надёжный <span className="text-destructive">альянс</span><br />
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+              Надёжный <span className="text-primary">альянс</span><br />
               для роста вашего бизнеса —<br />
               профессиональная команда
             </h1>
@@ -134,7 +134,7 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <Badge variant="secondary" className="mb-4">О компании</Badge>
-              <h2 className="text-3xl font-bold text-primary mb-6">Альянс — ваш партнёр в подборе персонала</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-6">Альянс — ваш партнёр в подборе персонала</h2>
               <p className="text-muted-foreground text-lg mb-6">
                 Кадровое агентство полного цикла с многолетним опытом работы. 
                 Мы создаём стратегические альянсы между работодателями и кандидатами, 
@@ -153,10 +153,10 @@ export default function Index() {
               </div>
             </div>
             <div className="relative">
-              <div className="rounded-xl shadow-lg w-full h-[400px] bg-gradient-to-br from-primary/20 to-destructive/20 flex items-center justify-center">
+              <div className="rounded-xl shadow-lg w-full h-[400px] bg-gradient-to-br from-primary/30 to-accent/30 border border-primary/20 flex items-center justify-center">
                 <div className="text-center">
                   <Icon name="Users" size={120} className="text-primary mx-auto mb-4" />
-                  <p className="text-2xl font-bold text-primary">Профессиональная команда</p>
+                  <p className="text-2xl font-bold text-foreground">Профессиональная команда</p>
                 </div>
               </div>
             </div>
@@ -165,11 +165,11 @@ export default function Index() {
       </section>
 
       {/* Tariff Plans */}
-      <section id="tariffs" className="py-16 px-8 bg-secondary/20">
+      <section id="tariffs" className="py-16 px-8 bg-secondary/30">
         <div className="w-full max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Тарифные планы</Badge>
-            <h2 className="text-3xl font-bold text-primary mb-4">Выберите подходящий тариф</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Выберите подходящий тариф</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
               Гибкие условия сотрудничества для компаний любого масштаба
             </p>
@@ -284,11 +284,11 @@ export default function Index() {
       </section>
 
       {/* Advantages */}
-      <section id="advantages" className="py-16 px-8">
+      <section id="advantages" className="py-16 px-8 bg-background">
         <div className="w-full max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Наши преимущества</Badge>
-            <h2 className="text-3xl font-bold text-primary mb-4">Почему с нами выгодно работать</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Почему с нами выгодно работать</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
               Многолетний опыт и проверенные методики подбора персонала
             </p>
@@ -335,11 +335,11 @@ export default function Index() {
       </section>
 
       {/* Success Cases */}
-      <section className="py-16 px-8 bg-secondary/10">
+      <section className="py-16 px-8 bg-secondary/30">
         <div className="w-full max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Кейсы</Badge>
-            <h2 className="text-3xl font-bold text-primary mb-4">Успешные проекты</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Успешные проекты</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
               Реальные результаты нашей работы с крупными компаниями
             </p>
@@ -431,11 +431,11 @@ export default function Index() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 px-8">
+      <section className="py-16 px-8 bg-background">
         <div className="w-full max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">Отзывы</Badge>
-            <h2 className="text-3xl font-bold text-primary mb-4">Что говорят наши клиенты</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Что говорят наши клиенты</h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
               Отзывы руководителей компаний о сотрудничестве с нами
             </p>
@@ -513,8 +513,8 @@ export default function Index() {
 
       {/* Contacts */}
       <section id="contacts" className="py-20 px-8 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-destructive opacity-95"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-accent/80"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.05),transparent_50%)]"></div>
         
         <div className="w-full max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
@@ -569,10 +569,10 @@ export default function Index() {
             </Card>
           </div>
 
-          <Card className="bg-white shadow-2xl max-w-2xl mx-auto">
+          <Card className="bg-card/90 backdrop-blur-sm border-primary/30 shadow-2xl max-w-2xl mx-auto">
             <CardContent className="p-8">
               <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-primary mb-2">Быстрая заявка</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-2">Быстрая заявка</h3>
                 <p className="text-muted-foreground">
                   Заполните форму, и наш менеджер свяжется с вами для консультации
                 </p>
@@ -640,59 +640,59 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-12 px-8">
+      <footer className="bg-card border-t border-border py-12 px-8">
         <div className="w-full max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="h-8 w-8 bg-white rounded-lg flex items-center justify-center">
-                  <span className="text-primary font-bold text-lg">А</span>
+                <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">А</span>
                 </div>
-                <span className="text-xl font-bold">АЛЬЯНС</span>
+                <span className="text-xl font-bold text-foreground">АЛЬЯНС</span>
               </div>
-              <p className="text-primary-foreground/70 text-sm">
+              <p className="text-muted-foreground text-sm">
                 Кадровое агентство полного цикла для крупного бизнеса
               </p>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Услуги</h4>
+              <h4 className="font-semibold mb-4 text-foreground">Услуги</h4>
               <div className="space-y-2 text-sm">
-                <div className="text-primary-foreground/70">Подбор персонала</div>
-                <div className="text-primary-foreground/70">Executive Search</div>
-                <div className="text-primary-foreground/70">Массовый рекрутинг</div>
-                <div className="text-primary-foreground/70">Аутстаффинг</div>
+                <div className="text-muted-foreground">Подбор персонала</div>
+                <div className="text-muted-foreground">Executive Search</div>
+                <div className="text-muted-foreground">Массовый рекрутинг</div>
+                <div className="text-muted-foreground">Аутстаффинг</div>
               </div>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Отрасли</h4>
+              <h4 className="font-semibold mb-4 text-foreground">Отрасли</h4>
               <div className="space-y-2 text-sm">
-                <div className="text-primary-foreground/70">Банки и финансы</div>
-                <div className="text-primary-foreground/70">IT и интернет</div>
-                <div className="text-primary-foreground/70">Производство</div>
-                <div className="text-primary-foreground/70">Розничная торговля</div>
+                <div className="text-muted-foreground">Банки и финансы</div>
+                <div className="text-muted-foreground">IT и интернет</div>
+                <div className="text-muted-foreground">Производство</div>
+                <div className="text-muted-foreground">Розничная торговля</div>
               </div>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Контакты</h4>
+              <h4 className="font-semibold mb-4 text-foreground">Контакты</h4>
               <div className="space-y-2 text-sm">
-                <div className="text-primary-foreground/70">+7 919 903 9250</div>
-                <div className="text-primary-foreground/70">kadri@ka-alians.ru</div>
-                <div className="text-primary-foreground/70">Москва, ул. 2-я Энтузиастов, 5/40</div>
+                <div className="text-muted-foreground">+7 919 903 9250</div>
+                <div className="text-muted-foreground">kadri@ka-alians.ru</div>
+                <div className="text-muted-foreground">Москва, ул. 2-я Энтузиастов, 5/40</div>
               </div>
             </div>
           </div>
           
-          <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
-            <div className="text-primary-foreground/70">
+          <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+            <div className="text-muted-foreground">
               © 2024 Альянс. Все права защищены.<br />
               ИНН 7703768127
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground">Политика конфиденциальности</a>
-              <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground">Пользовательское соглашение</a>
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Политика конфиденциальности</a>
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Пользовательское соглашение</a>
             </div>
           </div>
         </div>
