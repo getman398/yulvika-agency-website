@@ -334,6 +334,183 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Success Cases */}
+      <section className="py-16 px-8 bg-secondary/10">
+        <div className="w-full max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="mb-4">Кейсы</Badge>
+            <h2 className="text-3xl font-bold text-primary mb-4">Успешные проекты</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+              Реальные результаты нашей работы с крупными компаниями
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border-0 shadow-md">
+              <CardContent className="pt-6">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Icon name="Building2" size={24} className="text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">Крупный банк</h3>
+                    <p className="text-sm text-muted-foreground">Финансовый сектор</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Закрыли 25 позиций в IT-департаменте за 45 дней. Подобрали команду разработчиков, аналитиков и архитекторов.
+                </p>
+                <div className="flex items-center space-x-4 text-sm">
+                  <div>
+                    <div className="text-2xl font-bold text-primary">25</div>
+                    <div className="text-muted-foreground">вакансий</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-primary">45</div>
+                    <div className="text-muted-foreground">дней</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-md">
+              <CardContent className="pt-6">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                    <Icon name="Code2" size={24} className="text-purple-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">IT-компания</h3>
+                    <p className="text-sm text-muted-foreground">Технологии</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Собрали команду из 15 специалистов для запуска нового продукта. CTO, тимлиды и senior-разработчики.
+                </p>
+                <div className="flex items-center space-x-4 text-sm">
+                  <div>
+                    <div className="text-2xl font-bold text-primary">15</div>
+                    <div className="text-muted-foreground">специалистов</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-primary">30</div>
+                    <div className="text-muted-foreground">дней</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-md">
+              <CardContent className="pt-6">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <Icon name="Factory" size={24} className="text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">Производство</h3>
+                    <p className="text-sm text-muted-foreground">Промышленность</p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Провели массовый подбор персонала — 120 человек за 2 месяца. От рабочих до руководителей отделов.
+                </p>
+                <div className="flex items-center space-x-4 text-sm">
+                  <div>
+                    <div className="text-2xl font-bold text-primary">120</div>
+                    <div className="text-muted-foreground">человек</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-primary">60</div>
+                    <div className="text-muted-foreground">дней</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-16 px-8">
+        <div className="w-full max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="mb-4">Отзывы</Badge>
+            <h2 className="text-3xl font-bold text-primary mb-4">Что говорят наши клиенты</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+              Отзывы руководителей компаний о сотрудничестве с нами
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="border-2 border-primary/20">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 italic">
+                  "Альянс помог нам закрыть критически важные позиции в кратчайшие сроки. Профессиональный подход и качественная работа с кандидатами. Рекомендуем!"
+                </p>
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <span className="text-white font-semibold">АС</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold">Алексей Смирнов</div>
+                    <div className="text-sm text-muted-foreground">HR-директор, Финансовая группа</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary/20">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 italic">
+                  "Работаем с агентством уже 3 года. Всегда подбирают точно под наши требования, понимают специфику IT-рынка. Благодарим за сотрудничество!"
+                </p>
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <span className="text-white font-semibold">ЕК</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold">Елена Кузнецова</div>
+                    <div className="text-sm text-muted-foreground">CEO, IT-компания TechSolutions</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary/20">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground mb-6 italic">
+                  "Массовый подбор персонала прошёл на высшем уровне. Отличное соотношение цены и качества. Все сотрудники прошли испытательный срок успешно."
+                </p>
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <span className="text-white font-semibold">ДП</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold">Дмитрий Петров</div>
+                    <div className="text-sm text-muted-foreground">Директор по персоналу, Производство</div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Contacts & Contact Form */}
       <section id="contacts" className="py-16 px-8 bg-primary/5">
         <div className="w-full max-w-7xl mx-auto">
