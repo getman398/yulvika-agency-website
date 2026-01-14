@@ -127,6 +127,27 @@ export default function Index() {
         <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent"></div>
       </section>
 
+      {/* Vacancies Section */}
+      <section className="py-16 px-8 bg-secondary/30">
+        <div className="w-full max-w-4xl mx-auto text-center">
+          <Badge variant="outline" className="mb-4">Актуальные вакансии</Badge>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            Ищете работу мечты?
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Ознакомьтесь с актуальными вакансиями от ведущих компаний. Каждый день мы обновляем список предложений специально для вас.
+          </p>
+          <Button 
+            size="lg" 
+            className="text-lg px-8"
+            onClick={() => window.open('https://t.me/Korepanov_bot', '_blank')}
+          >
+            Актуальные вакансии
+            <Icon name="ExternalLink" size={20} className="ml-2" />
+          </Button>
+        </div>
+      </section>
+
       {/* About Company */}
       <section id="services" className="py-16 px-8">
         <div className="w-full max-w-7xl mx-auto">
@@ -643,8 +664,8 @@ export default function Index() {
                   <Icon name="Phone" size={32} className="text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">Позвоните нам</h3>
-                <a href="tel:+79199039250" className="text-white/90 hover:text-white text-lg font-medium">
-                  +7 919 903 9250
+                <a href="tel:+79058755178" className="text-white/90 hover:text-white text-lg font-medium">
+                  +7 905 875 5178
                 </a>
                 <p className="text-white/70 text-sm mt-2">Пн-Пт: 9:00 - 18:00</p>
               </CardContent>
@@ -787,7 +808,7 @@ export default function Index() {
             <div>
               <h4 className="font-semibold mb-4 text-foreground">Контакты</h4>
               <div className="space-y-2 text-sm">
-                <div className="text-muted-foreground">+7 919 903 9250</div>
+                <div className="text-muted-foreground">+7 905 875 5178</div>
                 <div className="text-muted-foreground">kadri@ka-alians.ru</div>
                 <div className="text-muted-foreground">Москва, ул. 2-я Энтузиастов, 5/40</div>
               </div>
